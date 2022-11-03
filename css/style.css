@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 25px;
+}
+
+.sacola{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sacola img{
+    width: 50px;
+}
+
+.header2{
+    background-color: black;
+    font-size: small;
+}
+
+a:link{
+    text-decoration: none;
+    color: white;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+ul > li{
+    padding: 10px;
+}
+
+/* main{
+    width: 100vw;
+} */
