@@ -9,33 +9,198 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/variables.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 </head>
 <body>
-    <header>
-        <h1>Mycrocosmos Pants</h1>
-        <div class="sacola">
-            <img src="images/bag.png" alt="Sacola de Compras">
-            <p>0</p>
-        </div>
-    </header>
-    <div class="header2">
-        <ul>
-            <li><a href="#">PÁGINA INICIAL</a></li>
-            <li><a href="#">SOBRE</a></li>
-            <li><a href="#">PRODUTOS</a></li>
-            <li><a href="#">POLÍTICA DA LOJA</a></li>
-        </ul>
-    </div>
-    <main onload="slide1()">
-        <a href="link1.html" id="aId"><img src="images/dogwicecream.jpg" alt="" id="id"></a>
-        <a href="link2.html" id="aId"><img src="images/madruguinha.jpg" alt="" id="id"></a>
-        <a href="link1.html" id="aId"><img src="images/me-da-o-biscoito.jpg" alt="" id="id"></a>
-    </main>
-    <section>
-        <h1>MYCROCOSMOS PANTS</h1>
-        <p>Bem-vindo à nossa loja, onde você encontra looks das últimas tendências com preços que cabem no seu bolso. Confira nossa coleção e compre online no(a) Mycrocosmos Pants. Dúvidas? Entre em contato.</p>
-    </section>
+    <div class="container">
+        <header>
+            <h1 class="logo">LOGO</h1>
+            <ul>
+                <li><a href="#">PÁGINA INICIAL</a></li>
+                <li><a href="#sobre">SOBRE</a></li>
+                <li><a href="#shop">PRODUTOS</a></li>
+                <li><a href="#">POLÍTICA DA LOJA</a></li>
+                <li><a href="#medida">COMO TIRAR MEDIDA</a></li>
+            </ul>
+            <a href="#" class="sacola">
+                <img src="images/paper-bag.png" alt="">
+                <p>0</p>
+            </a>
+        </header>
+        <main>
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide"><img src="images/apresentacao/calça1.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="images/apresentacao/calça2.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="images/apresentacao/calça3.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="images/apresentacao/calça4.jpg" alt=""></div>
+                  ...
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+              
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </main>
+        
+        <section class="sobre" id="sobre">
+            <div class="header-sobre">
+                <h1>MYCROCOSMOS PANTS</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus officia tempora nulla debitis a et, dolorem cupiditate adipisci tempore suscipit alias error vel </p>
+            </div>
+            <div class="sobre-info">
+                <img src="images/quem-somos.jpeg" alt="">
+                <div class="sobre-texto">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore molestias quas nesciunt non sunt harum pariatur placeat in vitae tenetur itaque quo nostrum, numquam quae, quos a modi odio autem!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore molestias quas nesciunt non sunt harum pariatur placeat in vitae tenetur itaque quo nostrum, numquam quae, quos a modi odio autem!</p>
+                </div>
+            </div>
+        </section>
 
-    <script src="script.js"></script>
+        <section class="shop" id="shop">
+            <div class="header-shop">
+                <h1>Nossos produtos</h1>
+                <p>Esses aqui são alguns de nossos produtos</p>
+            </div>
+            <div class="container-card">
+                <div class="card">
+                    <div class="top-card">
+                        <h2 class="title">Produto 1</h2>
+                    </div>
+                    <div class="media-card"></div>
+                    <div class="bottom-card">
+                        <small class="bottom-text">Defina os tamanhos em cemtimetros:</small>
+                        <div class="actions-card">
+                            <div class="input-field">
+                                <label for="cintura">Cintura: </label>
+                                <input type="number" name="cintura" class="bottom-input" id="">
+                            </div>
+                            <div class="input-field">
+                                <label for="quadril">Quadril: </label>
+                                <input type="number" name="quadril" class="bottom-input" id="">
+                            </div>
+                            <div class="input-field">
+                                <label for="coxa">Coxa: </label>
+                                <input type="number" name="coxa" class="bottom-input" id="">
+                            </div>
+                            <div class="input-field">
+                                <label for="comprimento">Comprimento: </label>
+                                <input type="number"  name="comprimento" class="bottom-input" id="">
+                            </div>
+                            <div class="input-field">
+                                <label for="gancho">Gancho: </label>       
+                                <input type="number" name="gancho" class="bottom-input" id="">
+                            </div>
+                        </div>
+                        <div class="bottom-buttons">
+                            <button class="actions">Comprar +</button>
+                            <button class="actions">Como tirar medidas?</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="top-card">
+                        <h2 class="title">Produto 1</h2>
+                    </div>
+                    <div class="media-card"></div>
+                    <div class="bottom-card">
+                        <small class="bottom-text">Defina os tamanhos em cemtimetros:</small>
+                        <div class="actions-card">
+                            <div class="input-field">
+                                <label for="cintura">Cintura: </label>
+                                <input type="number" name="cintura" class="bottom-input" id="">
+                            </div>
+                            <div class="input-field">
+                                <label for="quadril">Quadril: </label>
+                                <input type="number" name="quadril" class="bottom-input" id="">
+                            </div>
+                            <div class="input-field">
+                                <label for="coxa">Coxa: </label>
+                                <input type="number" name="coxa" class="bottom-input" id="">
+                            </div>
+                            <div class="input-field">
+                                <label for="comprimento">Comprimento: </label>
+                                <input type="number"  name="comprimento" class="bottom-input" id="">
+                            </div>
+                            <div class="input-field">
+                                <label for="gancho">Gancho: </label>       
+                                <input type="number" name="gancho" class="bottom-input" id="">
+                            </div>
+                        </div>
+                        <div class="bottom-buttons">
+                            <button class="actions">Comprar +</button>
+                            <button class="actions">Como tirar medidas?</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="top-card">
+                        <h2 class="title">Produto 1</h2>
+                    </div>
+                    <div class="media-card"></div>
+                    <div class="bottom-card">
+                        <small class="bottom-text">Defina os tamanhos em cemtimetros:</small>
+                        <div class="actions-card">
+                            <div class="input-field">
+                                <label for="cintura">Cintura: </label>
+                                <input type="number" name="cintura" class="bottom-input" id="">
+                            </div>
+                            <div class="input-field">
+                                <label for="quadril">Quadril: </label>
+                                <input type="number" name="quadril" class="bottom-input" id="">
+                            </div>
+                            <div class="input-field">
+                                <label for="coxa">Coxa: </label>
+                                <input type="number" name="coxa" class="bottom-input" id="">
+                            </div>
+                            <div class="input-field">
+                                <label for="comprimento">Comprimento: </label>
+                                <input type="number"  name="comprimento" class="bottom-input" id="">
+                            </div>
+                            <div class="input-field">
+                                <label for="gancho">Gancho: </label>       
+                                <input type="number" name="gancho" class="bottom-input" id="">
+                            </div>
+                        </div>
+                        <div class="bottom-buttons">
+                            <button class="actions">Comprar +</button>
+                            <button class="actions">Como tirar medidas?</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            
+        loop: true,
+
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+    });
+    </script>
 </body>
 </html>

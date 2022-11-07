@@ -1,34 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Montserrat', sans-serif;
+}
+
+a:visited{
+    color: #fff;
 }
 
 header{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 25px;
-}
-
-.sacola{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.sacola img{
-    width: 50px;
-}
-
-.header2{
     background-color: black;
     font-size: small;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    padding: 30px;
+    transition: 0.6s;
+    z-index: 2;
 }
 
-a:link{
-    text-decoration: none;
-    color: white;
+header ul{
+    position: relative;
+}
+
+header ul li{
+    position: relative;
+}
+
+header ul li a{
+    position: relative;
+    transition: 0.5s;
+}
+
+.logo{
+    width: 100px;
+}
+
+header .logo{
+    position: relative;
+    color: #fff;
+}
+
+header.sticky{
+    padding: 5px 100px;
+}
+
+header .sticky ul li a{
+    background-color: #000;
 }
 
 ul{
@@ -38,10 +63,146 @@ ul{
     padding: 5px;
 }
 
-ul > li{
+ul li{
     padding: 10px;
 }
 
-/* main{
-    width: 100vw;
-} */
+.sacola{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sacola img{
+    padding-right: 5px;
+}
+
+.sacola img{
+    width: 30px;
+}
+
+a:link{
+    text-decoration: none;
+    color: white;
+}
+
+.swiper{
+    height: 80vh;
+}
+
+.swiper-slide img{
+    width: 100%;
+}
+
+.sobre{
+    height: 100vh;
+    margin: 100px;
+}
+
+.header-sobre{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sobre-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 100px;
+}
+
+.sobre-texto{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 200px;
+    padding: 0px 20px;
+}
+
+.sobre img{
+    width: 400px;
+    border-radius: 50%;
+}
+
+.shop{
+    height: 100vh;;
+}
+
+.header-shop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.container-card{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    background: #fff;
+    box-shadow: 0px 2px 23px #26385338;
+    border-radius: 22px;
+    width: 400px;
+}
+
+.top-card {
+    padding: 20px;
+}
+
+.media-card{
+    background: url("../images/produto/produto1.jpg") center/cover;
+    height: 300px;
+}
+
+.bottom-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.actions-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.input-field{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+}
+
+.bottom-input {
+    width: 40px;
+    margin-left: 5px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.bottom-buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 15px 0;
+}
+
+.actions{
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 15px;
+}
