@@ -39,21 +39,23 @@ header ul li a{
     transition: 0.5s;
 }
 
-.logo{
-    width: 100px;
-}
-
-header .logo{
-    position: relative;
-    color: #fff;
-}
-
-header.sticky{
+header .sticky{
     padding: 5px 100px;
 }
 
 header .sticky ul li a{
     background-color: #000;
+}
+
+.logo{
+    width: 70px;
+    transition: 0.6s;
+    position: relative;
+}
+
+.logo.decrease{
+    width: 40px;
+    position: relative;
 }
 
 ul{
@@ -157,8 +159,18 @@ a:link{
     padding: 20px;
 }
 
-.media-card{
+.media-card1{
     background: url("../images/produto/produto1.jpg") center/cover;
+    height: 300px;
+}
+
+.media-card2{
+    background: url("../images/produto/produto2.jpg") center/cover;
+    height: 300px;
+}
+
+.media-card3{
+    background: url("../images/produto/produto3.jpg") center/cover;
     height: 300px;
 }
 
@@ -170,8 +182,10 @@ a:link{
     padding: 20px;
 }
 
-.actions-card{
-    display: flex;
+.actionsCard{
+
+    color: #546;
+    display: none;
     justify-content: space-between;
     align-items: center;
     align-content: center;
